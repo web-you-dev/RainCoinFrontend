@@ -123,7 +123,8 @@
             };
 
       document.body.appendChild(script);
-    
+            let tg = window.Telegram.WebApp;
+            tg.expand();
       window.addEventListener('telegram-web-app', function(event) {
             var data = event.detail;
             var userId = data.user_id;
